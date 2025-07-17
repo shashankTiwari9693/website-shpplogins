@@ -1,1 +1,1363 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <title>Cheat Code Login Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .tabs {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .tab-button {
+      padding: 10px 20px;
+      background: #ddd;
+      border: none;
+      border-radius: 5px 5px 0 0;
+      cursor: pointer;
+    }
+
+    .tab-button.active {
+      background: #fff;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .tile {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 200px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.05);
+      background: #e6f0ff;
+    }
+
+    .tile strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .env-label {
+      font-size: 12px;
+      color: #777;
+    }
+ .classy-table-container {
+    max-width: 100%;
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  .classy-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+
+  .classy-table thead {
+    background-color: #f3f4f6;
+  }
+
+  .classy-table th, .classy-table td {
+    padding: 14px 20px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .classy-table th {
+    font-weight: 600;
+    color: #374151;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .classy-table td {
+    font-size: 14px;
+    color: #4b5563;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .classy-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+
+  .classy-table tbody tr:hover {
+    background-color: #eef2f7;
+  }
+
+  .classy-table tbody tr:last-child td {
+    border-bottom: none;
+  },
+  .tile {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.avatar {
+  opacity: 1;
+  visibility: visible;
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+ .flow-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .step {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .step img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .step .code {
+      font-weight: bold;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .step .label {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .arrow {
+      font-size: 24px;
+      color: #999;
+      margin: 5px 0;
+    }
+
+    .sub-step {
+      font-size: 13px;
+      color: #0077cc;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> 🧬 SHPP Logins</h1>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab(0)">🌐 Environments</button>
+    <button class="tab-button" onclick="showTab(1)">📦 Item List</button>
+	<button class="tab-button" onclick="showTab(2)">🔄 RFQ Flow</button>
+  </div>
+
+  <!-- Tab 1: Environments -->
+  <div class="tab-content active">
+  <h1>🔐 Environment Login Tiles</h1>
+
+
+
+  <!-- === DEV === -->
+ 
+
+  <!-- === DEV-UAT === -->
+  
+
+  <!-- === UAT === -->
+  <h2>📦 UAT <span class="env-label">http://10.70.235.194</span></h2>
+ <div class="section">
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/dashboard?token=&userId=7')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairShortFlat&clotheType=BlazerShirt&facialHairType=BeardLight&eyeType=Default&skinColor=Light" alt="Store Assistant">
+    <strong>Store Assistant</strong>
+    <div class="role">Department</div>
+  </div>
+
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/dashboard?token=&userId=52')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairCaesar&clotheType=GraphicShirt&facialHairType=MoustacheMagnum&eyeType=Default&skinColor=Brown" alt="Account Store">
+    <strong>Account Store</strong>
+    <div class="role">Department</div>
+  </div>
+
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/dashboard?token=&userId=8')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairSides&clotheType=Hoodie&facialHairType=Blank&eyeType=Happy&skinColor=Light" alt="Incharge Store">
+    <strong>Incharge Store</strong>
+    <div class="role">Department</div>
+  </div>
+
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/dashboard?token=&userId=53')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairShortWaved&clotheType=CollarSweater&facialHairType=BeardMajestic&eyeType=Default&skinColor=Brown" alt="Head Of Finance">
+    <strong>Head Of Finance</strong>
+    <div class="role">Department</div>
+  </div>
+
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/dashboard?token=&userId=9')">
+    <img class="avatar" src="https://avataaars.io/?topType=NoHair&clotheType=BlazerSweater&facialHairType=MoustacheFancy&eyeType=Squint&skinColor=DarkBrown" alt="Procuring Entity">
+    <strong>Procuring Entity</strong>
+    <div class="role">Department</div>
+  </div>
+</div>
+ <div class="section">
+    <div class="tile" onclick="openLink('http://10.70.235.194/web/home/vendor-dashboard?token=&userId=2&vendorId=1')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairDreads01&facialHairType=MoustacheFancy&clotheType=ShirtScoopNeck&eyeType=Wink&skinColor=Brown" alt="Chetan Chauhan">
+    <strong>Chetan Chauhan</strong>
+    <div class="role">Vendor (Prosperity Partners)</div>
+  </div>
+     <div class="tile" onclick="openLink('http://10.70.235.194/web/home/vendor-dashboard?token=&userId=3&vendorId=3')">
+    <img class="avatar" src="https://avataaars.io/?topType=LongHairStraight&accessoriesType=Blank&clotheType=GraphicShirt&eyeType=Happy&skinColor=Light" alt="Prerna Singh">
+    <strong>Prerna Singh</strong>
+    <div class="role">Vendor</div>
+  </div>
+
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/vendor-dashboard?token=&userId=4&vendorId=2')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairShortFlat&facialHairType=BeardMedium&clotheType=BlazerSweater&eyeType=Default&skinColor=Light" alt="Yash Pareek">
+    <strong>Yash Pareek</strong>
+    <div class="role">Vendor</div>
+  </div>
+  <div class="tile" onclick="openLink('http://10.70.235.194/web/home/vendor-dashboard?token=&userId=5&vendorId=8')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairSides&facialHairType=MoustacheMagnum&clotheType=ShirtCrewNeck&eyeType=Happy&skinColor=DarkBrown" alt="Ishwor Mahato">
+    <strong>Ishwor Mahato</strong>
+    <div class="role">Notified Agency</div>
+  </div>
+
+    <div class="tile" onclick="openLink('http://10.70.235.194/web/home/vendor-dashboard?token=&userId=6&vendorId=4')">
+    <img class="avatar" src="https://avataaars.io/?topType=ShortHairShortFlat&facialHairType=BeardMajestic&clotheType=CollarSweater&eyeType=Squint&skinColor=Brown" alt="Shashank Tiwari">
+    <strong>Shashank Tiwari</strong>
+    <div class="role">Notified Agency</div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Tab 2: Items -->
+  <div class="tab-content">
+   <h2>📦 Vendor-wise Category Items</h2>
+
+<div id="vendor-items">
+  <!-- Each vendor group -->
+ <div class="classy-table-container"> 
+  <table class="classy-table">
+    <tr>
+        <td>ID</td>
+        <td>CATEGORY_TITLE</td>
+        <td>VENDOR_NAME</td>
+        <td>VENDOR_TYPE</td>
+    </tr>
+    <tr>
+        <td>43211507</td>
+        <td>Desktop computer</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211508</td>
+        <td>Personal computer</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211509</td>
+        <td>Tablet computer</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211515</td>
+        <td>Computer workstation</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211516</td>
+        <td>Minicomputer</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211517</td>
+        <td>Analog computer</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211507</td>
+        <td>Desktop computer</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211508</td>
+        <td>Personal computer</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211509</td>
+        <td>Tablet computer</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211515</td>
+        <td>Computer workstation</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211516</td>
+        <td>Minicomputer</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211517</td>
+        <td>Analog computer</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211507</td>
+        <td>Desktop computer</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211508</td>
+        <td>Personal computer</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211509</td>
+        <td>Tablet computer</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211515</td>
+        <td>Computer workstation</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211516</td>
+        <td>Minicomputer</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211517</td>
+        <td>Analog computer</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211507</td>
+        <td>Desktop computer</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211508</td>
+        <td>Personal computer</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211509</td>
+        <td>Tablet computer</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211515</td>
+        <td>Computer workstation</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211516</td>
+        <td>Minicomputer</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211517</td>
+        <td>Analog computer</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211507</td>
+        <td>Desktop computer</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211508</td>
+        <td>Personal computer</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211509</td>
+        <td>Tablet computer</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211515</td>
+        <td>Computer workstation</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211516</td>
+        <td>Minicomputer</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211517</td>
+        <td>Analog computer</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211507</td>
+        <td>Desktop computer</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211508</td>
+        <td>Personal computer</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211509</td>
+        <td>Tablet computer</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211515</td>
+        <td>Computer workstation</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211516</td>
+        <td>Minicomputer</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>43211517</td>
+        <td>Analog computer</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112306</td>
+        <td>Printer and  scanner and multifunctional equipment maintenance</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112307</td>
+        <td>PC or workstation or notebook maintenance</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112308</td>
+        <td>Point of sale hardware maintenance and support service</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112306</td>
+        <td>Printer and  scanner and multifunctional equipment maintenance</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112307</td>
+        <td>PC or workstation or notebook maintenance</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112308</td>
+        <td>Point of sale hardware maintenance and support service</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112306</td>
+        <td>Printer and  scanner and multifunctional equipment maintenance</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112307</td>
+        <td>PC or workstation or notebook maintenance</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112308</td>
+        <td>Point of sale hardware maintenance and support service</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112306</td>
+        <td>Printer and  scanner and multifunctional equipment maintenance</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112307</td>
+        <td>PC or workstation or notebook maintenance</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112308</td>
+        <td>Point of sale hardware maintenance and support service</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112306</td>
+        <td>Printer and  scanner and multifunctional equipment maintenance</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112307</td>
+        <td>PC or workstation or notebook maintenance</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112308</td>
+        <td>Point of sale hardware maintenance and support service</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112306</td>
+        <td>Printer and  scanner and multifunctional equipment maintenance</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112307</td>
+        <td>PC or workstation or notebook maintenance</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>81112308</td>
+        <td>Point of sale hardware maintenance and support service</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72152103</td>
+        <td>Building insulation service</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72153209</td>
+        <td>Waterproofing service</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72154101</td>
+        <td>Air compressor rental and maintenance service</td>
+        <td>Prosperity Partners</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72152103</td>
+        <td>Building insulation service</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72153209</td>
+        <td>Waterproofing service</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72154101</td>
+        <td>Air compressor rental and maintenance service</td>
+        <td>Vertex Dynamics</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72152103</td>
+        <td>Building insulation service</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72153209</td>
+        <td>Waterproofing service</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72154101</td>
+        <td>Air compressor rental and maintenance service</td>
+        <td>Oasis Commerce</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72152103</td>
+        <td>Building insulation service</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72153209</td>
+        <td>Waterproofing service</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72154101</td>
+        <td>Air compressor rental and maintenance service</td>
+        <td>Divya Group Of Companies</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72152103</td>
+        <td>Building insulation service</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72153209</td>
+        <td>Waterproofing service</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72154101</td>
+        <td>Air compressor rental and maintenance service</td>
+        <td>Momentum Enterprises</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72152103</td>
+        <td>Building insulation service</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72153209</td>
+        <td>Waterproofing service</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>72154101</td>
+        <td>Air compressor rental and maintenance service</td>
+        <td>Ajmera Marbles</td>
+        <td>Vendor</td>
+    </tr>
+    <tr>
+        <td>12352202</td>
+        <td>Proteins</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352203</td>
+        <td>Antibodies</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352204</td>
+        <td>Enzymes</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352205</td>
+        <td>Nutrients</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352206</td>
+        <td>Tissues</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352202</td>
+        <td>Proteins</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352203</td>
+        <td>Antibodies</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352204</td>
+        <td>Enzymes</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352205</td>
+        <td>Nutrients</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352206</td>
+        <td>Tissues</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352202</td>
+        <td>Proteins</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352203</td>
+        <td>Antibodies</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352204</td>
+        <td>Enzymes</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352205</td>
+        <td>Nutrients</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>12352206</td>
+        <td>Tissues</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121701</td>
+        <td>Livestock selection</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121702</td>
+        <td>Livestock showing services</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121703</td>
+        <td>Livestock slaughtering services</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121701</td>
+        <td>Livestock selection</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121702</td>
+        <td>Livestock showing services</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121703</td>
+        <td>Livestock slaughtering services</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121701</td>
+        <td>Livestock selection</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121702</td>
+        <td>Livestock showing services</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>70121703</td>
+        <td>Livestock slaughtering services</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121515</td>
+        <td>Floating oil and gas production system hull fabrication service</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121516</td>
+        <td>Fixed oil and gas offshore production facilities fabrication service</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121517</td>
+        <td>Liquid natural gas LNG plant construction service</td>
+        <td>Rajasthan Khadi &amp; Village Industries Board</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121515</td>
+        <td>Floating oil and gas production system hull fabrication service</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121516</td>
+        <td>Fixed oil and gas offshore production facilities fabrication service</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121517</td>
+        <td>Liquid natural gas LNG plant construction service</td>
+        <td>Rajasthan State Allied and Healthcare Council</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121515</td>
+        <td>Floating oil and gas production system hull fabrication service</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121516</td>
+        <td>Fixed oil and gas offshore production facilities fabrication service</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+    <tr>
+        <td>72121517</td>
+        <td>Liquid natural gas LNG plant construction service</td>
+        <td>Legacy Group</td>
+        <td>NotifyAgency</td>
+    </tr>
+	<tr>
+    <td>86132102</td>
+    <td>Training planning and development consultancy service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81171801</td>
+    <td>Agricultural science consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81101516</td>
+    <td>Energy or utility consulting service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81141511</td>
+    <td>Quality control and quality assurance consultancy services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>70141711</td>
+    <td>Agronomy consultancy service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81121505</td>
+    <td>Economic development consultancy</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81151706</td>
+    <td>Consultants biostratigraphic analysis</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81151905</td>
+    <td>Field based geophysical survey consultants</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81151912</td>
+    <td>Lab/office based survey consultants</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81171501</td>
+    <td>Marine biology consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>81103008</td>
+    <td>Marine consultancy services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>84111509</td>
+    <td>Finance advisory consulting services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>85455901</td>
+    <td>The diagnosis of person consulting on behalf of another person</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>85455903</td>
+    <td>The diagnosis of person consulting for explanation of investigation findings</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>85141702</td>
+    <td>Remedy consultations</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>85121502</td>
+    <td>Primary care physician consultation services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80122101</td>
+    <td>Administrative law consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80122102</td>
+    <td>Municipality law consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80122103</td>
+    <td>Computing law consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101501</td>
+    <td>New business start up consultation services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101502</td>
+    <td>Corporate mergers consultation services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101503</td>
+    <td>Corporate divestiture consultation services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101504</td>
+    <td>Strategic planning consultation services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101506</td>
+    <td>Organizational structure consultation</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101507</td>
+    <td>Information technology consultation services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101508</td>
+    <td>Business intelligence consulting services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101509</td>
+    <td>Government affairs and community relations consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101510</td>
+    <td>Risk management consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101511</td>
+    <td>Human resources consulting service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101512</td>
+    <td>Actuarial consulting services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101513</td>
+    <td>Process and procedures management consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171902</td>
+    <td>Investor and shareholder relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171903</td>
+    <td>Internal stakeholder relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171904</td>
+    <td>Cultural and ethnic group relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171905</td>
+    <td>Indigenous peoples relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171906</td>
+    <td>Government relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171907</td>
+    <td>Community relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171908</td>
+    <td>Not for profit organization relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80171909</td>
+    <td>Business and utility provider relations consultation and engagement</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80122201</td>
+    <td>Constitutional law consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80122202</td>
+    <td>Constitutional law public sector defense consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101801</td>
+    <td>Health and safety management and consultancy services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80101709</td>
+    <td>Emergency response management and consultancy services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80122301</td>
+    <td>International law consultation service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>80151605</td>
+    <td>Customs consulting service</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>71161605</td>
+    <td>Oilfield consultancy services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>71161610</td>
+    <td>Technical consultant services</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>71161611</td>
+    <td>Technical consultant services for claim management</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>71161612</td>
+    <td>Technical consultant services for asset integrity information and data control</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>91101602</td>
+    <td>Make up consultation</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>91101901</td>
+    <td>Color consultant</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+<tr>
+    <td>91101903</td>
+    <td>Wardrobe consultant</td>
+    <td>Oasis Commerce</td>
+    <td>Single Source</td>
+</tr>
+
+</table>
+  <!-- Continue for Rajasthan State Allied and Healthcare Council, Legacy Group, etc. -->
+</div>
+</div>
+  </div>
+  <div class="tab-content">
+
+  <h2>Procurement Process Flow</h2>
+
+  <div class="flow-container">
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=ShortHairShortWaved&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&skinColor=Light" alt="Avatar" />
+      <div class="code">M1</div>
+      <div class="label">Store Assistant</div>
+      <div class="name">Shashank Tiwari</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=ShortHairSides&facialHairType=MoustacheMagnum&clotheType=Hoodie&eyeType=Default&skinColor=Brown" alt="Avatar" />
+      <div class="code">M2</div>
+      <div class="label">Account Store</div>
+      <div class="name">Vivek</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=ShortHairShortFlat&facialHairType=BeardLight&clotheType=GraphicShirt&eyeType=Wink&skinColor=DarkBrown" alt="Avatar" />
+      <div class="code">C1</div>
+      <div class="label">Incharge Store</div>
+      <div class="name">Anuj Sharma</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=LongHairStraight&accessoriesType=Prescription01&clotheType=BlazerSweater&eyeType=Default&skinColor=Light" alt="Avatar" />
+      <div class="code">C2</div>
+      <div class="label">Head Of Finance</div>
+      <div class="name">Bhavesh</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=ShortHairDreads01&facialHairType=BeardMagestic&clotheType=BlazerShirt&eyeType=Happy&skinColor=Brown" alt="Avatar" />
+      <div class="code">A1</div>
+      <div class="label">Procuring Entity</div>
+      <div class="name">Ishwor Mahato</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=Hijab&accessoriesType=Blank&clotheType=BlazerSweater&eyeType=Happy&skinColor=Light" alt="Avatar" />
+      <div class="code">Vendor</div>
+      <div class="label">Submit Quotation</div>
+      <div class="name">Prerna Singh</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=ShortHairFrizzle&facialHairType=BeardLight&clotheType=Hoodie&eyeType=Default&skinColor=Brown" alt="Avatar" />
+      <div class="code">C1</div>
+      <div class="label">Select L1 Vendor</div>
+      <div class="name">Anuj Sharma</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=ShortHairSides&facialHairType=BeardMagestic&clotheType=ShirtCrewNeck&eyeType=Wink&skinColor=DarkBrown" alt="Avatar" />
+      <div class="code">A1</div>
+      <div class="label">Generate Purchase Order</div>
+      <div class="sub-step">+ OTP Verification</div>
+      <div class="name">Ishwor Mahato</div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="step">
+      <img class="avatar" src="https://avataaars.io/?topType=Hijab&accessoriesType=Blank&clotheType=GraphicShirt&eyeType=Wink&skinColor=Light" alt="Avatar" />
+      <div class="code">Vendor</div>
+      <div class="label">Mark Delivery</div>
+      <div class="name">Prerna Singh</div>
+    </div>
+
+  </div>
+
+
+  </div>
+  <script>
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+
+    function showTab(index) {
+      const contents = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+
+      contents.forEach((c, i) => {
+        c.classList.toggle('active', i === index);
+        buttons[i].classList.toggle('active', i === index);
+      });
+    }
+  </script>
+
+</body>
+<footer style="text-align: center; padding: 15px; background-color: #f8f9fa; color: #333; font-size: 14px; border-top: 1px solid #ddd; margin-top: 40px;">
+  <i class="fas fa-code" style="color: #007bff;"></i>
+  &nbsp;Designed & Developed by <strong>Shashank Tiwari</strong>
+</footer>
+
+</html>
